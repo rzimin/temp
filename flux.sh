@@ -20,6 +20,7 @@ PIP_PACKAGES=(
 
 NODES=(
     "https://github.com/ltdrdata/ComfyUI-Manager"
+    "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
     
 )
 
@@ -38,6 +39,8 @@ VAE_MODELS=(
 )
 
 LORA_MODELS=(
+    "https://huggingface.co/bingbangboom/flux_whimscape/resolve/main/WHMSCPE001.safetensors"
+    "https://civitai.com/models/769042"
 )
 
 ESRGAN_MODELS=(
@@ -80,7 +83,7 @@ function provisioning_start() {
         "${WORKSPACE}/storage/stable_diffusion/models/unet" \
         "${UNET_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/lora" \
+        "${/opt/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/controlnet" \
