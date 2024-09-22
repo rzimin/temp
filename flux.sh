@@ -39,7 +39,7 @@ VAE_MODELS=(
 
 LORA_MODELS=(
     "https://huggingface.co/bingbangboom/flux_whimscape/resolve/main/WHMSCPE001.safetensors"
-    "https://civitai.com/models/769042"
+    "https://civitai.com/api/download/models/769042"
 )
 
 ESRGAN_MODELS=(
